@@ -11,7 +11,7 @@
 #define TAG "tb_ota"
 
 /*! Firmware version used for comparison after OTA config was received from ThingsBoard */
-#define FIRMWARE_VERSION "v1.2"
+#define FIRMWARE_VERSION "v1.1"
 
 /*! Factory partiton label */
 #define FACTORY_PARTITION_LABEL "factory"
@@ -41,11 +41,11 @@
 #define TB_CLIENT_ATTR_FIELD_CURRENT_FW "currentFwVer"
 
 /*! Shared attribute keys on ThingsBoard */
-#define TB_SHARED_ATTR_FIELD_TARGET_FW_URL "lastTargetFwUrl"
-#define TB_SHARED_ATTR_FIELD_TARGET_FW_VER "lastTargetFwVer"
+#define TB_SHARED_ATTR_FIELD_TARGET_FW_URL "targetFwUrl"
+#define TB_SHARED_ATTR_FIELD_TARGET_FW_VER "targetFwVer"
 
 /*! Body of the request of specified shared attributes */
-#define TB_SHARED_ATTR_KEYS_REQUEST "{\"sharedKeys\":\"lastTargetFwUrl,lastTargetFwVer\"}"
+#define TB_SHARED_ATTR_KEYS_REQUEST "{\"sharedKeys\":\"targetFwUrl,targetFwVer\"}"
 
 /**
  * @brief Bit set for application events
